@@ -9,93 +9,206 @@
 
 
 <section class="booking">
-	<h1 class="booking__title"></h1>
+	<h1 class="booking__title">Бронирование</h1>
 	<p><span></span></p>
 </section>
-<section class="form-first">
-	<h2 class="form-first__step"></h2>
-	<h1 class="form-first__title"></h1>
-	<form action="" class="form-first__calendar">
-		<label for=""></label>
-		<input type="text">
-		<label for=""></label>
-		<input type="text">
-	</form>
-<section class="form-second">
-	<h2 class="form-second__step"></h2>
-	<h1 class="form-second__title"></h1>
-	<div class="form-second__accommodation"><span></span></div>
-	<div class="form-second__accommodation"><span></span></div>
+
+<!-- calendar -->
+<form action="">
+<section class="form-date">
+	<h2 class="form-date__step step">Шаг 1</h2>
+	<h1 class="form-date__title">Дата отдыха</h1>
+	<ul class="form-date__calendar">
+	    <li class="form-date__arrival">
+		    <label for="arrivalDay">Дата въезда</label>
+		    <input type="text" name="arrivalDay" id="arrivalDay" maxlength="2" placeholder="дд">
+		    <input type="text" name="arrivalMonth" maxlength="2" placeholder="мм">
+		    <input type="text" name="arrivalYear" maxlength="4" placeholder="гггг">
+	    </li>
+	    <li class="form-date__departure">
+		   <label for="departureDay">Дата въезда</label>
+		    <input type="text" name="departureDay" id="departureDay" maxlength="2" placeholder="дд">
+		    <input type="text" name="departureMonth" maxlength="2" placeholder="мм">
+		    <input type="text" name="departureYear" maxlength="4" placeholder="гггг">
+	    </li>		
+	</ul>
 </section>
-<section class="form-third">
-	<h2 class="form-third__step"></h2>
-	<h1 class="form-third__title"></h1>
-	<div class="form-third__types">
-		<span class="form-third__name"></span>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
-	<div class="form-third__types">
-		<span class="form-third__name"></span>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
-	<div class="form-third__types">
-		<span class="form-third__name"></span>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
-	<div class="form-third__types">
-		<span class="form-third__name"></span>
-		<ul>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
-	</div>
+
+<!-- accommodation type selection -->
+
+<section class="form-accommodation">
+	<h2 class="form-accommodation__step step"></h2>
+	<h1 class="form-accommodation__title"></h1>
+	<ul class="form-accommodation__list">
+		<li class="form-accommodation__item">
+			<label for="hotel">
+				<input type="radio" checked name="stayingPlace" id="hotel"> <span class="form-accommodation__item-text">Отель</span>
+			</label>
+		</li>
+		<li class="form-accommodation__item">
+			<label for="cottage">
+				<input type="radio" checked name="stayingPlace" id="cottage"> <span class="form-accommodation__item-text">Коттедж</span>
+			</label>
+		</li>
+	</ul>
 </section>
-<section class="form-fourth">
-	<h2 class="form-fourth__step"></h2>
-	<h1 class="form-fourth__title"></h1>
-	<form action="" class="form-fourth__personal-info">
-		<input type="text">
-		<input type="text">
-		<p></p>
-		<input type="text">
-		<input type="text">
-		<p></p>
-	</form>
+
+<!-- cottage options -->
+
+<section class="form-cottages">
+	<h2 class="form-cottages__step"></h2>
+	<h1 class="form-cottages__title"></h1>
+	<div class="form-cottages__types">
+		<ul class="form-cottages__list">
+			<li class="form-cottages__list-item">
+				<label for="flagman">
+					<input type="radio" id="flagman" name="cottageType"><span class=""></span>
+				
+				<div class="form-cottages__item-wrapper">
+					<ul class="form-cottages__item-features">
+						<li class="form-cottages__item-feature"><sup></sup></li>
+						<li class="form-cottages__item-feature"></li>
+						<li class="form-cottages__item-feature"></li>
+						<li class="form-cottages__item-feature"></li>
+					</ul>
+				</div>
+				</label>
+			</li>
+			
+			<li class="form-cottages__list-item">
+				<label for="ozerny">
+					<input type="radio" id="ozerny" name="cottageType"><span class=""></span>
+				
+				<div class="form-cottages__item-wrapper">
+					<ul class="form-cottages__item-features">
+						<li class="form-cottages__item-feature"><sup></sup></li>
+						<li class="form-cottages__item-feature"></li>
+						<li class="form-cottages__item-feature"></li>
+						<li class="form-cottages__item-feature"></li>
+					</ul>
+				</div>
+				</label>
+			</li>
+			<li class="form-cottages__list-item">
+				<label for="portovy">
+					<input type="radio" id="portovy" name="cottageType"><span class=""></span>
+				
+				<div class="form-cottages__item-wrapper">
+					<ul class="form-cottages__item-features">
+						<li class="form-cottages__item-feature"><sup></sup></li>
+						<li class="form-cottages__item-feature"></li>
+						<li class="form-cottages__item-feature"></li>
+						<li class="form-cottages__item-feature"></li>
+					</ul>
+				</div>
+				</label>
+			</li>
+			<li class="form-cottages__list-item">
+				<label for="olkhovka">
+					<input type="radio" id="olkhovka" name="cottageType"><span class=""></span>
+				
+				<div class="form-cottages__item-wrapper">
+					<ul class="form-cottages__item-features">
+						<li class="form-cottages__item-feature"><sup></sup></li>
+						<li class="form-cottages__item-feature"></li>
+						<li class="form-cottages__item-feature"></li>
+						<li class="form-cottages__item-feature"></li>
+					</ul>
+				</div>
+				</label>
+			</li>
+		</ul>
+	</div>		
 </section>
-<section class="form-fifth">
-	<h2 class="form-fifth__step"></h2>
-	<h1 class="form-fifth__title"></h1>
-	<form action="" class="form-fifth__payment">
-		<input type="text">
-		<input type="text">
-		<input type="text">
-		<input type="text">
-		<input type="text">
-		<input type="text">
-		<input type="text">
-	</form>
-	<a href="" class="btn btn--large"></a>
+
+<!-- personal info -->
+
+<section class="form-personal-info">
+	<h2 class="form-personal-info__step step"></h2>
+	<h1 class="form-personal-info__title"></h1>
+	<div class="form-personal-info__input">
+		<input type="text" name="firstName" placeholder="имя">
+	</div>
+	<div class="form-personal-info__input">
+		<input type="text" name="surname" placeholder="фамилия">
+	</div>	
+	<div class="form-personal-info__input">
+		<input type="number" name="phone" id="phone" placeholder="номер телефона">
+		<label for="phone">Мы свяжемся с вами в случае необходимости.</label>
+	</div>
+	<div class="form-personal-info__input">
+		<input type="email" name="email" id="email" placeholder="e-mail">
+		<label for="email">На этот адрес мы вышлем вам подтверждение о забронированном номере.</label>
+	</div>		
 </section>
+
+<!-- payment -->
+
+<section class="form-payment">
+	<h2 class="form-payment__step step"></h2>
+	<h1 class="form-payment__title">Способ оплаты</h1>
+	<div class="form-payment__wrapper">
+		<div class="payment-type">
+			<div class="on-the-spot">
+				<div class="on-the-spot__description">
+					<label for="onTheSpot">
+                    <input type="radio" id="onTheSpot" name="payment-type">
+                    <span class="on-the-spot__choose">по приезду</span>
+                  </label>
+                  <p class="on-the-spot__text">Вы можете произвести оплату по факту заселения.</p>
+				</div>
+				
+			</div>
+			<div class="now">
+                <div class="now__description">
+                  <label for="payNow">
+                    <input type="radio" id="payNow" checked name="payment-type">
+                    <span class="payment-now__choose">сейчас</span>
+                  </label>
+                  <p class="now__text">Прямо сейчас вы можете произвести оплату с помощью банковской карты.</p>
+                </div>  
+                <div class="now__form">
+                  <div class="now__col1">
+                    <label for="cardNumber">номер карты</label>
+                    <input type="text" name="cardNumber" id="cardNumber" placeholder="0000 0000 0000 0000"> 
+                    
+                    <label for="ownerLastName">фамилия владельца карты</label>  
+                    <input type="text" name="ownerLastName" id="ownerLastName" placeholder="vladimir vladimirovich">
+                    
+                  </div>
+                  <div class="payment-now__col2">  
+                    <label for="cvv">код cvv <i class="fa fa-question-circle"></i></label>      
+                    <input type="text" name="cvv" id="cvv" placeholder="123">
+                    
+                    <label for="validThru">действует до</label>
+                    <input type="text" name="validThru" id="validThru" placeholder="01/2018">
+                    
+                  </div>  
+                </div>
+              </div>
+            </div>
+            <div class="sum-for-payment">
+              <h3 class="sum-for-payment__title">к оплате</h3>
+              <p class="sum-for-payment__sum"></p>
+              <p class="sum-for-payment__warning"></p>
+            </div>
+          </div>
+          <div class="payment__btn">
+            <input type="button" value="забронировать" onclick="check(this.form)" class="btn btn--large" id="submit">
+          </div> 
+        </div>         
+      </div>  
+    </section>
+</form>			
+<footer class="page-footer">
+		<div class="page-footer__contacts"><br></div>
+		<a href="" class="page-footer__logo"><img src="" alt=""></a>
+		<ul class="social-net">
+		<li class="social-net__link"><a href="" class="vk"></a></li>
+		<li class="social-net__link"><a href=""  class="insta"></a></li>
+		<li class="social-net__link"><a href=""  class="fb"></a></li>
+		</ul>
+		<div class="page-footer__address"><br></div>
+	</footer>
 </body>
 </html>
